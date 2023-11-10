@@ -6,7 +6,7 @@ COPY . .
 
 RUN GOOS=linux go build -ldflags '-s -w' -o bin/metrics-server-exporter
 
-FROM alpine:3.17
+FROM alpine:3.18.3
 
 WORKDIR /app
 
